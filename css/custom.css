@@ -11,10 +11,10 @@ h1{
 
 }
 /* Attribute Selector */
-/* a[title="google"]
+a[title="google"]{
     color: green;
     letter-spacing: 10px;
-}*/
+}
     
 /* Id Selector */
 #idone{
