@@ -1,0 +1,16 @@
+#mybody{
+    background-color: blueviolet;
+}
+
+.heading{
+    text-align: center;
+    color: yellowgreen;
+}
+#myform{
+    width: 40%;
+    margin: auto;
+}
+input[type="text"]{
+    width: 100%;
+    height: 40px;
+}

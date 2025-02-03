@@ -7,14 +7,11 @@
 h1{
     color:blue;
     text-align: center;
-    
-
 }
 /* Attribute Selector */
-a[title="google"]{
+/* a[title="google"]{ */
     color: green;
-    letter-spacing: 10px;
-}
+    letter-spacing: 10px;}
     
 /* Id Selector */
 #idone{
@@ -39,3 +36,28 @@ a[title="google"]{
 .child > a{
     color: orange;
 }
+
+/* :link */
+
+a:link{
+    color: red;
+    font-size: larger;
+}
+
+a:hover{
+    color: green;
+}
+
+a:active{
+    color: yellow;
+}
+a:visited{
+    color: brown;
+}
+
+/* target */
+:target{
+    color: red;
+    border: 2px solid black;
+}
+
