@@ -61,3 +61,57 @@ a:visited{
     border: 2px solid black;
 }
 
+/* Border */
+.borderOne{
+    border: 5px dashed blueviolet;
+}
+
+.borderTwo{
+    border-left: 10px solid red;
+}
+
+.borderSizeOne{
+    border-style: solid;
+    /* border-width: 10px; */
+    /* top rigt botton left */
+
+    /* border-width: 10px 100px; */
+    /* top & botton / left & right */
+
+    /* border-width: 10px 50px 100px; */
+    /* top / left & right / botton */
+
+    border-width: 1px 5px 10px 15px;
+    /* top /rigt /botton /left */
+}
+.borderStyle{
+    border-style: solid dashed double dotted;
+    border-color: blue green;
+}
+
+/* margin */
+.margin{
+    border: 1px solid black;
+    /* margin: 100px; */
+    margin: 50px 20px;
+    /* margin-left: 200px; */
+}
+/* padding */
+.padding{
+    border: 1px solid red;
+    padding: 100px 10px 50px 20px;
+    /* top / right / botton / left */
+}
+
+/* Inline */
+.inline{
+    border: 2px solid rebeccapurple;
+    width: 300px;
+    display:inline-block ;
+}
+
+.block{
+    border: 2px solid rgb(25, 219, 100);
+    width: 300px;
+    display:inline-block ;
+}

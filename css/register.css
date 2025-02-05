@@ -80,6 +80,6 @@ p:empty{
 }
 .register-btn:hover{
     background-color: black;
-    color: black;
+    color: green;
     cursor: grabbing;
 }
