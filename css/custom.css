@@ -7,6 +7,7 @@
 h1{
     color:blue;
     text-align: center;
+    margin: 50px 0px;
 }
 /* Attribute Selector */
 /* a[title="google"]{ */
@@ -115,3 +116,53 @@ a:visited{
     width: 300px;
     display:inline-block ;
 }
+
+/* float */
+.float-left img{
+    width: 40%;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+
+.float-right img{
+    width: 40%;
+    float: right;
+}
+
+/* Grid */
+.gridOne div,.gridTwo.div,.gridFour div,.gridThree.giv,.gridFive.giv,.gridSix.giv{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.gridOne,.gridTwo,.gridFour,.gridThree,.gridFour,.gridFive,.gridSix{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.gridTwo{
+    grid-column-gap: 50px;
+}
+
+.gridThree{
+    grid-row: 30px;
+}
+
+.gridFour{
+    grid-gap: 50px;
+    /* grid-row-gap: 40px */
+    /* grid-column-gap: 20px; */
+}
+
+.colunmadd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.rowadd{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
