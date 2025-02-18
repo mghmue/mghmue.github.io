@@ -181,7 +181,7 @@ padding: 50px 200px;
     font-size: 3em;
     color: white;
     text-align: center;
-    
+    padding: 100px 0 50px 0;
 }
 .our-menu {
     display: grid;
@@ -197,7 +197,7 @@ padding: 50px 200px;
 }
 
 .item-img {
-    width: 100px;
+    width: 100%;
 }
 
 .item-content {
@@ -205,7 +205,7 @@ padding: 50px 200px;
     text-align: center;
 }
 
-.item.name {
+.item-name {
     font-size: 20px;
     color: white;
     font-weight: bold;
@@ -223,4 +223,76 @@ padding: 50px 200px;
     justify-content: center;
     align-items: center;
     margin: 50px 0 100px 0;
+}
+
+/* Contact Us */
+.contact-us{
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin: 100px 0 50px 0;
+}
+
+.map {
+    margin: 0 70px;
+}
+
+.Contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 70px;
+}
+.info {
+    display: flex;
+    padding: 20px 0;
+}
+
+.contact-icon {
+    position: relative;
+    background-color: #cda45e;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* contact form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input,.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a1814;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+}
+
+/* footer */
+.footer {
+    background-color: black;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-title{
+    font-weight: bold;
+}
+
+.dev {
+    color: #cda45e;
+    text-decoration: none;
+    font-weight: bold;
 }
