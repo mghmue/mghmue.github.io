@@ -45,7 +45,8 @@ body {
     text-decoration: none;
     color: #002fff;
     padding: 15px;
-    font-size: 20px;
+    font-size: 15px;
+
 }
 
 .nav-menu ul li a:hover{
@@ -98,8 +99,8 @@ body {
 font-size: 3em;
 color:#002fff;
 text-align: center;
-margin: 40px 0;
-padding: 100px 0 70px 0;
+margin: 5px 0;
+padding: 100px 0 20px 0;
 }
 
 .best-seller {
@@ -110,7 +111,7 @@ padding: 100px 0 70px 0;
 }   
 
 .seller {
-    background-color:#bdb5a3;
+    background-color:#f0f0f0;
     border-radius: 20px;
     overflow: hidden;
     padding:0 10px;
@@ -121,11 +122,14 @@ padding: 100px 0 70px 0;
 .best-img{
     width: 300px;
     height: 300px;
+    margin-top:50px;
+    margin-bottom:5px;
+    
  }
 
  .best-text {
     align-items: center;
-    margin: 35px;
+    margin-top:5px;
  }
 .best-name {
     color: red;
@@ -141,16 +145,22 @@ padding: 100px 0 70px 0;
    
  
  /* ဝန်ဆောင်မှုများ */
+ 
  .service{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 10px;
+    padding: 5px;
     align-items: center;
+    border-radius: 20px;
+    background-color: #dedede;
+    overflow: hidden;
+   
  }
 
  .service-img {
     width: 50%;
-    padding-left: 200px;
+    padding-left: 100px;
+   
  }
 
  .service-title {
