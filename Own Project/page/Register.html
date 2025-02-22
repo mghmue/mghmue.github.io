@@ -4,27 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
 
 </head>
 <body>
-    <div class="contact-form">
-        <form action="">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
+
+    <nav class="navbar">
+        <div class=logo>
+            <img src="../Images/pk book logo.png" alt="">
+            <h2>P&K Book Shop``</h2>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li>
+                    <a href="../index.html">မူလစာမျက်နှာ</a>
+                </li>
+                <li>
+                    <a href="Books.html">စာအုပ်များအားလုံး</a>
+                </li>
+                <li>
+                    <a href="">IT(အိုင်တီ)</a>
+                </li>
+                <li>
+                    <a href="service.html">ဝန်ဆောင်မှုများ</a>
+                </li>
+                <li>
+                    <a href="Register.html">Register</a>
+                </li>
+            </ul>
+        </div>
+     <div class="contact-form">
+            <img src="../Images/register.jpg"class="reg-img" alt="">
+         <form action="">
+                <div class="form-group">
+                 <label for="name">Name</label>
+                 <input type="text" name="name" id="name">
+             </div>
+
+             <div class="form-group">
+                 <label for="Phone">Phone</label>
+                 <input type="text" name="Phone" id="Phone">
+             </div>
+
+             <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="text" name="Email" id="Email">
             </div>
 
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email">
-            </div>
+              <div class="form-group">
+                 <label for="Address">Address</label>
+                 <textarea name="Address" id="Address"></textarea>
+             </div>
 
-            <div class="form-group">
-                <label for="name">Message</label>
-                <textarea name="message" id="message"></textarea>
-            </div>
-            <button type="submit" class="btn">Send</button>
-        </form>
-    </div>
+             
+             <button type="submit" class="btn">Send</button>
+         </form>
+     </div>
 </body>
 </html>
