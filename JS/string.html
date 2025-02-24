@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+<body>
+    <h1>Strig Lesson</h1>
+    <script>
+        let firstName = "Developer";
+        let lastName = "Pyae Sone Paing Hmue";
+        console.log(firstName,lastName);
+        console.log(lastName.length);
+
+        let fullName = firstName +''+ lastName;
+        console.log(fullName);
+
+        console.log("My name is" + fullName);
+
+        document.write(fullName + '<br>');
+        document.write(fullName + '<b>' + lastName + '</b><br>');
+
+        document.write(`${firstName} <b> ${lastName} </b><br>`);
+        document.write(`My name is ${fullName}. I am 25 years old.<br>`);
+
+    
+        document.write(firstName.toUpperCase()+'<br>') 
+        document.write(firstName.toLowerCase()+'<br>')       
+
+
+        let myjob = "        Chemistry Student           " ;
+        document.write(myjob.trim()+'<br>');
+
+        //ကိုယ်ပေါ်ချင်တဲ့စာတန်းကို ဖြတ်တောက်ချင်တဲ့အခါ ရေးပုံ
+        document.write(fullName.substr(20,1)+ '<br>')
+        document.write(fullName+"Number")
+        //ကိုယ်လိုချင်တဲ့စကားလုံးကိုရှာချင်တဲ့အခါ ရေးပုံ
+        let ser = "I am Hero!";
+        document.write(ser.seach('I') + '<br>')
+
+        //ကိုယ်လိုချင်တဲ့စကားလုံးကို အစားထိုးချင်ရင် 
+        let rep = "I want to visit Mandaly"
+        document.write(rep.replace('Mandaly','Yangon'+'<br>'));
+
+        //Single code ထဲမှာ single code ကြော်ငြာချင်တဲ့အခါ
+        document.write('I\'m Pyae Sone Paing Hmue');
+
+        //Double code ထဲမှာ Double code ကြော်ငြာချင်တဲ့အခါ
+        document.write("I'm Pyae Sone Paing Hmue. My heihgt is 5'7\"");
+
+        //Single code ရော Double code ရော ကြော်ငြာချင်တဲ့အခါ
+        document.write(`I'm Pyae Sone Paing Hmue. My height is 5'7"`);   
+        
+        
+
+
+
+
+            
+        
+        
+        
+        
+
+    </script>
+    
+</body>
+</html>
