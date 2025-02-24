@@ -10,10 +10,14 @@ body {
 
 .navbar{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     padding: 10px;
     align-items: center;
 }
+
+/* .seach{
+    border-radius: 10px;
+} */
 
 .logo {
     display: flex;
@@ -32,9 +36,10 @@ body {
 
 .nav-menu ul {
     display: grid;
-    grid-template-columns: repeat(5,auto);
-    justify-content: end;
+    grid-template-columns: repeat(4,auto);
+    justify-content:end;
     gap: 10px;
+    
 }
 
 .nav-menu ul li {
@@ -45,7 +50,7 @@ body {
     text-decoration: none;
     color: #002fff;
     padding: 15px;
-    font-size: 15px;
+    font-size: 13px;
 
 }
 
@@ -75,6 +80,10 @@ body {
     align-items: center;
     color:white;
     text-align: center;
+}
+
+.tag-line{
+    font-size: 30px;
 }
 
 .pk-text p{
@@ -171,8 +180,86 @@ padding: 100px 0 20px 0;
     color: black;
  }
 
- /* register */
+/* register */
+ .contact-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+ }
+ .contact-form form{
+    margin: 50px 0px 50px 100px;
+
+ }
 .reg-img{
-    width: 100%;
-    padding-left: 300px;
+    width: 250px;
+    margin: 50px 20px 50px 0;
+}
+
+.contact-form , .form-group input textarea {
+    
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+input, textarea {
+  
+    padding: 15px;
+    background-color: #86a7ec ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: rgb(29, 28, 28);
+  
+}
+
+
+.R-menu ul {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content:end;
+    gap: 10px;
+    padding: 10px;
+    margin-left: 100px;
+
+}
+
+.R-menu ul li  {
+    list-style-type: none;
+}
+
+.R-menu ul li a {
+    text-decoration: none;
+    color: #002fff;
+    padding: 15px;
+    font-size: 20px;
+
+}
+
+.R-menu ul li a:hover{
+    color:rgb(227, 238, 233);
+    background-color: #86a7ec;
+    border-radius: 5px;
+}
+
+/* footer */
+.footer {
+   
+   border-radius: 10px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-title{
+    font-weight: bold;
+}
+
+.dev {
+    color: #cda45e;
+    text-decoration: none;
+    font-weight: bold;
 }
