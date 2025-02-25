@@ -34,10 +34,10 @@
 
         //ကိုယ်ပေါ်ချင်တဲ့စာတန်းကို ဖြတ်တောက်ချင်တဲ့အခါ ရေးပုံ
         document.write(fullName.substr(20,1)+ '<br>')
-        document.write(fullName+"Number")
+        document.write(fullName+"Number");
         //ကိုယ်လိုချင်တဲ့စကားလုံးကိုရှာချင်တဲ့အခါ ရေးပုံ
-        let ser = "I am Hero!";
-        document.write(ser.seach('I') + '<br>')
+        // let ser = "I am Hero!";
+        // document.write(ser.seach('a') + '<br>')
 
         //ကိုယ်လိုချင်တဲ့စကားလုံးကို အစားထိုးချင်ရင် 
         let rep = "I want to visit Mandaly"
@@ -53,7 +53,51 @@
         document.write(`I'm Pyae Sone Paing Hmue. My height is 5'7"`);   
         
         
+        let students = ["Mg Mg","Aye Aye","Aung Aung","Hla Hla","Tun Tun"]
+            console.log(students);
+         //အစဥ◌်လိုက်စီပေးတာ
+         students.sort();
+         console.log(students);
+         
+        //ပြောင်းပြန်စီတဲ့အခါ
+         students.reverse();
+         console.log(students);
 
+        //အစဥ◌်လိုက်စီပြီးရင်ပြောင်းပြန်စီ
+         students.sort().reverse();
+         console.log(students);
+
+
+         let studentStr = students.toString();
+         console.log(studentStr);
+
+         let names = "Hla Hla, Mya Mya , Aung Aung, Tun Tun, Aye Aye";
+         let  nameListArray = names.split('');
+         console.log(nameListArray);
+
+         let arr1 = [1,2,3];
+         let arr2 = [4,5,6];
+         let arr4 = [8,9,10];
+         console.log(arr1);
+         console.log(arr2);
+
+         let arr3 = arr1.concat(arr2);
+         console.log(arr3);
+
+         let arr5 = [...arr1,...arr2,...arr4];
+         console.log(arr5);
+         
+         
+         
+         
+         
+         
+         
+
+         
+
+
+            
 
 
 
