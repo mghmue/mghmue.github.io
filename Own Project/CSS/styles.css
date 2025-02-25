@@ -181,6 +181,7 @@ padding: 100px 0 20px 0;
  .contact-form{
     display: grid;
     grid-template-columns: 1fr 1fr ;
+    background-color:#dedede;
  }
  .contact-form form{
     margin: 50px 0px 50px 100px; 
@@ -205,18 +206,16 @@ padding: 100px 0 20px 0;
 input, textarea {
   
     padding: 15px;
-    background-color: #86a7ec ;
+    background-color: #353b47 ;
     border: 1px solid #ccc;
     border-radius: 5px;
     color: rgb(29, 28, 28);
-  
+   border: #121213;
 }
-
 
 /* footer */
 .footer {
-   
-   border-radius: 10px;
+   background-color: rgb(51, 49, 49);
     padding: 50px 0;
     text-align: center;
 }
