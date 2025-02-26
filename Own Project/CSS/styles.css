@@ -34,7 +34,7 @@ body {
 
 .nav-menu ul {
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(5,auto);
     justify-content:end;
     gap: 10px;
     
@@ -212,7 +212,7 @@ padding: 100px 0 20px 0;
 input, textarea {
   
     padding: 15px;
-    background-color: #353b47 ;
+    background-color: white ;
     border: 1px solid #ccc;
     border-radius: 5px;
     color: rgb(29, 28, 28);

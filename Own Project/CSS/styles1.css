@@ -39,7 +39,7 @@ body {
 
 .nav-menu ul {
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(5,auto);
     justify-content:end;
     gap: 10px;
 }
@@ -70,4 +70,10 @@ body {
     margin-top: 30px;
 }
 
+.footer:hover{
+    display:inline-block;
+   border-radius: 5px;
+   background-color: #86a7ec;
+    text-align: start;
 
+}
