@@ -21,7 +21,7 @@
 
         //argument function
         function sum(num1 , num2) {
-            document.write(`This sum is ${num1 . num2}`);
+            document.write(`This sum is ${num1 + num2}`);
         }
 
         sum (3,5);
@@ -29,10 +29,18 @@
         
         //default function
         function multi(num1 = 10, num2 = 5) {
-            document.write(`This multi result is ${num1 * num2} <br>`)
+            document.write(`This multi result is ${num1 * num2} <br>`);
         }
-
-
+             multi();
+             multi()
+        //return function
+        function resultData(num1,num2) {
+            let result = num1 + num2
+            return result;
+        }
+            let finaltResult = resultData(205,180)
+            console.log(finaltResult);
+            
     </script>
 </body>
 </html>
