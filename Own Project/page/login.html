@@ -3,39 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>logint</title>
-    <link rel="stylesheet" href="../CSS/log style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/styles1.css">
+
 </head>
 <body>
-  <div class="main">
-    <h1>P&K Book Shop``</h1>
-    <h3>Enter your login </h3>
-
-    <form action="">
-        <label for="first">
-            Username:
-        </label>
-        <input type="text" id="first" name="first" 
-            placeholder="Enter your Username" required>
-
-        <label for="password">
-            Password:
-        </label>
-        <input type="password" id="password" name="password" 
-            placeholder="Enter your Password" required>
-
-        <div class="wrap">
-            <button type="submit">
-                Submit
-            </button>
+    <nav class="navbar">
+        <div class=logo>
+            <img src="../Images/pk book logo.png" alt="">
+            <h2>P&K Book Shop``</h2>
         </div>
-    </form>
+        <div class="nav-menu">
+            <ul>
+                <li>
+                    <a href="../index.html">မူလစာမျက်နှာ</a>
+                </li>
+
+                <li>
+                    <a href="Books.html">စာအုပ်များအားလုံး</a>
+                </li>
+               
+                <li>
+                    <a href="service.html">ဝန်ဆောင်မှုများ</a>
+                </li>
+                
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+
+                <li>
+                    <a href="Register.html">Register</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
     
-    <p>Not registered?
-        <a href="../page/Register.html" style="text-decoration: none;">
-            Create an account
-        </a>
-    </p>
-</div>
+    <div class="main">
+        <img src="../Images/login-icon-vector.jpg"class="log-img" alt="">
+        
+        <form action="">
+            <div class="log">
+                <label for="first"> Username:</label>
+                <input type="text" id="first" name="first" placeholder="Enter your Username" required>
+            </div>
+            <div class="log">
+                 <label for="password">Password:</label>
+                 <input type="password" id="password" name="password"placeholder="Enter your Password" required>
+            </div>
+            <div class="submit">
+                <button type="submit" class="btn"> Submit</button>
+            </div>
+        </form>
 </body>
 </html>
