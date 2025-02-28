@@ -7,6 +7,12 @@
 </head>
 <body>
     <h1 id="myId">Dom <i>Selector</i></h1>
+    <p class="myClass">Class Selector 1</p>
+    <p class="myClass">Class Selector 1</p>
+    <p class="myClass">Class Selector 1</p>
+    <p class="myClass">Class Selector 1</p>
+    <p class="myClass">Class Selector 1</p>
+    <div class="myClass">Class Selector 2</div>
     <button onclick="showData()">Click Me</button>
 
     <script>
@@ -16,7 +22,30 @@
             console.log(myId);
             console.log(myId.innerText);
             console.log(myId.innerHTML);
-        
+             
+            myId.innerText = ` Javascript is <i> so funny!</i>`;
+            // class selector
+            let myClass = document.getElementsByClassName('myId');
+            console.log(myId);
+            console.log(myId.innerText);
+            console.log(myId.innerHTML);
+
+            //tag selector
+            let tagName = document.getElementsByTagName
+            console.log(tagName);
+            console.log(tagName[0]);
+            console.log(tagName[0].innerHTML);
+
+            //qrert selector
+            let querySelector = document.querySelector('myClass')
+            console.log(querySelector);
+
+            //query selector all
+            let querySelectorAll = document.querySelectorAll('myClass')
+            console.log(querySelectorAll);
+            
+            
+            
         }
     </script>
 </body>
