@@ -55,6 +55,24 @@ body {
     padding: 15px;
     font-size: 13px;
 }
+
+.book {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+
+.book-img {
+    padding-left: 200px;
+}
+.book-text {
+    color: black;
+}
+.book-title {
+    font-weight: bold;
+}
+
+/* login */
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -74,7 +92,7 @@ form {
     margin-top: 50px;
 }
 
-.log label,.log input {
+.login label,.log input {
     display: block;
     width: 60%;
     padding: 10px;
