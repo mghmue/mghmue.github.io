@@ -55,46 +55,34 @@ body {
     padding: 15px;
     font-size: 13px;
 }
-
-.book {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #dedede;
-}
-
-.book-img {
-    margin: 50px;
-   padding-left: 200px;
-}
-.book-text {
-    color:black;
-    margin-top: 30px;
-}
-
-.footer:hover{
-    display:inline-block;
-   border-radius: 5px;
-   background-color: #86a7ec;
-    text-align: start;
-
-}
-
 .main {
     display: grid;
-    background:  #dedede;
     grid-template-columns: 1fr 1fr;
+    background-color:#dedede;
+    
+}
 
-}
 .log-img {
-    width: 400px;
-    margin: 50px;
-    border-radius:44px;
+    width: 450px;
+    padding-left: 100px;
+    border-radius: 44px;
+    margin-top: 50px;
+    
 }
-.log {
-    display: grid;
-    justify-content: center;
+
+form {
+    margin-top: 50px;
+}
+
+.log label,.log input {
+    display: block;
+    width: 60%;
     padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border:black;
 }
+
 
 
 .btn{
@@ -104,5 +92,5 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
-
