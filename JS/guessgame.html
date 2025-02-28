@@ -8,6 +8,7 @@
 <body>
     <script>
         let screctNumber = 7;
+        let times = 0;
         let guessNumber = Number(prompt('Enter a number between 1 to 20'));
 
         while (screctNumber != guessNumber) {
@@ -16,10 +17,11 @@
             }else{
                 alert('Your number is higher, Try Again!');
             } 
-            guessNumber = Number(prompt('Enter a number between 1 to 20'));   
+            guessNumber = Number(prompt('Enter a number between 1 to 20'));  
+            times++;
         }
-        document.write("Your Correct Secrect Number");
-
+        document.write("Your Correct Secrect Number" +`<br>`);
+        document.write(`${times}Tried times`); 
     </script>
 </body>
 </html>
