@@ -92,7 +92,7 @@ form {
     margin-top: 50px;
 }
 
-.login label,.log input {
+.login label,.login input {
     display: block;
     width: 60%;
     padding: 10px;

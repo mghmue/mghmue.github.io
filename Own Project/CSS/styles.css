@@ -134,6 +134,9 @@ padding: 100px 0 20px 0;
     margin-bottom:5px;
     
  }
+.best-title {
+    font-weight: bolder;
+}
 
  .best-text {
     align-items: center;
