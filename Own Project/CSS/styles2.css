@@ -1,0 +1,41 @@
+.Forgot {
+    text-align: center;
+    margin-top: 100px;
+}
+form {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #002fff;
+    border-radius: 5px;
+}
+
+button {
+    width: 300px;
+    padding: 10px;
+    color: white;
+    border: #7ff0e6;
+    border-radius: 5px;
+    background-color: #002fff;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+body {
+    box-shadow: inset;
+   
+   box-shadow: 0 4px 5px rgb(0, 0,0,0.2);
+   width: 400px;
+   margin: auto;
+   padding: 20px;
+   backdrop-filter: blue (15px);
+   text-align: center;
+
+    
+}
