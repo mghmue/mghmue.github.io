@@ -223,6 +223,7 @@ form {
 .form-group label {
     display: block;
     font-weight: bold;
+    padding-bottom: 10px;
 }
 
 input, textarea {
