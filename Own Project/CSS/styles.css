@@ -13,7 +13,7 @@ body {
     grid-template-columns: 1fr 1fr ;
     padding: 10px;
     align-items: center;
-    background-color: #7ff0e6;
+    background-color: #0ddfcd;
 }
 
 
@@ -50,6 +50,7 @@ body {
     padding: 15px;
     font-size: 15px;
     font-weight: bold;
+    font-style: italic;
 
 }
 
@@ -104,13 +105,15 @@ body {
 
  /* best seller */
 .best {
-font-size: 3em;
-color:#002fff;
+font-size: 2em;
+color:#ff5e00;
 text-align: center;
 margin: 5px 0;
-padding: 100px 0 20px 0;
+padding: 70px 0 50px 0;
 }
-
+h3 {
+    padding-left: 70px;
+}
 .best-seller {
     display:grid;
     grid-template-columns:repeat(4, 1fr);
@@ -187,6 +190,14 @@ padding: 100px 0 20px 0;
  }
 
 /* register */
+
+form {
+    box-shadow: inset;
+    box-shadow: 0 4px 5px rgb(0, 0,0,0.5);
+    width: 400px;
+    margin: auto;
+    padding: 50px;
+}
  .contact-form{
     display: grid;
     grid-template-columns: 1fr 1fr ;

@@ -13,7 +13,7 @@ body {
     grid-template-columns: 1fr 1fr ;
     padding: 10px;
     align-items: center;
-    background-color: #7ff0e6;
+    background-color: #0ddfcd;
   
 }
 
@@ -53,7 +53,9 @@ body {
     text-decoration: none;
     color: #002fff;
     padding: 15px;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .book {
@@ -85,12 +87,19 @@ body {
     padding-left: 100px;
     border-radius: 44px;
     margin-top: 50px;
+    margin-bottom: 50px;
     
 }
 
 form {
     margin-top: 50px;
+    box-shadow: inset;
+   box-shadow: 0 4px 5px rgb(0, 0,0,0.5);
+   width: 400px;
+   margin: auto;
+   padding: 50px;
 }
+
 
 .login label,.login input {
     display: block;
@@ -99,6 +108,7 @@ form {
     border-radius: 5px;
     font-weight: bold;
     border:black;
+   
 }
 
 

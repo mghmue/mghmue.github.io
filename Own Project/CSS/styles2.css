@@ -22,6 +22,7 @@ button {
     border: #7ff0e6;
     border-radius: 5px;
     background-color: #002fff;
+    
 }
 button:hover {
     background-color: #0056b3;
@@ -29,13 +30,11 @@ button:hover {
 
 body {
     box-shadow: inset;
-   
-   box-shadow: 0 4px 5px rgb(0, 0,0,0.2);
+   box-shadow: 0 4px 5px rgb(0, 0,0,0.9);
    width: 400px;
    margin: auto;
-   padding: 20px;
+   padding: 10px;
    backdrop-filter: blue (15px);
    text-align: center;
-
-    
+    background-color: #dedede;
 }
