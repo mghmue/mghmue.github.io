@@ -13,7 +13,7 @@ body {
     grid-template-columns: 1fr 1fr ;
     padding: 10px;
     align-items: center;
-    background-color: #0ddfcd;
+    background-color: rgb(17, 17, 20);
 }
 
 
@@ -164,11 +164,12 @@ h3 {
  .service{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 5px;
+    padding: 0 50px;
     align-items: center;
     border-radius: 20px;
     background-color: #dedede;
     overflow: hidden;
+    margin:0 50px;
    
  }
 .main-service {
@@ -176,8 +177,8 @@ h3 {
 }
 
 .service-img {
-    width: 40%;
-    padding-left: 100px;
+    width: 50%;
+    padding-left: 200px;
    
  }
 

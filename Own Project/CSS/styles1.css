@@ -13,7 +13,7 @@ body {
     grid-template-columns: 1fr 1fr ;
     padding: 10px;
     align-items: center;
-    background-color: #0ddfcd;
+    background-color:rgb(17, 17, 20);
   
 }
 
@@ -125,3 +125,18 @@ label {
 }
 
  
+.footer {
+    background-color: rgb(51, 49, 49);
+     padding: 50px 0;
+     text-align: center;
+ }
+ 
+ .footer-title{
+     font-weight: bold;
+ }
+ 
+ .dev {
+     color: #cda45e;
+     text-decoration: none;
+     font-weight: bold;
+ }

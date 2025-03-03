@@ -1,3 +1,12 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(17, 17, 20);
+}
+
+
 .Forgot {
     text-align: center;
     margin-top: 100px;
@@ -15,6 +24,51 @@ input {
     border-radius: 5px;
 }
 
+.nav-menu ul {
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    justify-content:end;
+    gap: 10px;
+    
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #002fff;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.nav-menu ul li a:hover{
+    color:rgb(227, 238, 233);
+    background-color: #86a7ec;
+    border-radius: 5px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin: 0 15px 0 15px;
+}
+
+.logo h2 {
+    letter-spacing: 3px;
+}
+
+
 button {
     width: 300px;
     padding: 10px;
@@ -28,7 +82,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-body {
+.body {
     box-shadow: inset;
    box-shadow: 0 4px 5px rgb(0, 0,0,0.9);
    width: 400px;
