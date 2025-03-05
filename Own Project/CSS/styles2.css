@@ -1,3 +1,7 @@
+*{
+    padding:0;
+    margin:0;
+}
 .navbar{
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -82,13 +86,55 @@ button:hover {
     background-color: #0056b3;
 }
 
-.body {
+/* .body {
     box-shadow: inset;
-   box-shadow: 0 4px 5px rgb(0, 0,0,0.9);
+   box-shadow: 0 4px 5px rgb(0,0,0,0.5);
    width: 400px;
    margin: auto;
    padding: 10px;
    backdrop-filter: blue (15px);
    text-align: center;
     background-color: #dedede;
+} */
+
+form {
+    margin-top: 50px;
+    box-shadow: inset;
+   box-shadow: 0 4px 5px rgb(0,0,0,0.9);
+   width: 400px;
+   margin: auto;
+   padding: 50px;
+   
 }
+
+
+.login input {
+    /* display: block; */
+    width: 100%;
+    /* padding: 15px; */
+    border-radius: 5px;
+    font-weight: bold;
+    border:black;
+    margin-top: 20px;
+}
+input {
+    background-color: #86a7ec;
+
+}
+
+
+.footer {
+    background-color: rgb(51, 49, 49);
+     padding: 50px 0;
+     text-align: center;
+ }
+ 
+ .footer-title{
+     font-weight: bold;
+ }
+ 
+ .dev {
+     color: #cda45e;
+     text-decoration: none;
+     font-weight: bold;
+ }

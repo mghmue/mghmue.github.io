@@ -1,0 +1,34 @@
+.Search {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   /* margin: 100px 0 70px; */
+}
+
+.Search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Search-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3e0eec;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+.Search-icon {
+    display: flex;
+    position: relative;
+    background-color: rgb(223, 208, 208);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+    

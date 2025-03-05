@@ -103,17 +103,61 @@ body {
      border-radius: 5px;
  }
 
+ /* ရှာဖွေရေး */
+
+ .Search {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: left;
+    /* margin: 100px 0 70px; */
+ }
+ 
+ .Search-input {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
+ }
+ 
+ .Search-input input {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #3e0eec;
+     border-radius: 0;
+     font-size: 16px;
+     
+ }
+
+ .Search-icon {
+     display: flex;
+     position: relative;
+     background-color:#3e0eec;
+     width: 32px;
+     height: 32px;
+     border-radius: 0;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     padding: 5px;
+     border: 0;
+     color: #000;
+ }
+ 
  /* best seller */
 .best {
 font-size: 2em;
-color:#ff5e00;
+color:#0f0f0e;
 text-align: center;
 margin: 5px 0;
 padding: 70px 0 50px 0;
 }
+
 h3 {
     padding-left: 70px;
 }
+
 .best-seller {
     display:grid;
     grid-template-columns:repeat(4, 1fr);
@@ -131,12 +175,13 @@ h3 {
 
 }
 
-.best-img{
+.best-img:hover{
     width: 300px;
     height: 300px;
     margin-top:50px;
     margin-bottom:5px;
-    
+    transform: scale(1.1);
+    transition: 0.3s;
  }
 .best-title {
     font-weight: bolder;
@@ -213,13 +258,23 @@ form {
     border-radius:44px;
 }
 
-.contact-form ,.form-group input textarea {
+.contact-form ,.form-group input  {
     
     display: grid;
     justify-content: center;
     padding: 10px;
     
 }
+.form-group input{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    border:black;
+    margin-top: 20px;
+}
+
 
 .form-group label {
     display: block;
