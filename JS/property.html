@@ -8,8 +8,17 @@
 <body>
     <h1>Property And Method</h1>
     <h2 id="createTextNodeId"></h2>
-    <button onclick="createText()">createTextNodeId</button>
+    <p id="setAtt">This is Set Attribute</p>
+    <p id="getAtt" style="color: green;font-style: italic;" class="getAttribute">This is Get Attribute</p>
+    <p id="removeAtt" style="color: red;">This is Remove Attribute</p>
 
+
+
+    <button onclick="createText()">createTextNodeId</button>
+    <button onclick="createElementLesson()">createElementLesson</button>
+    <button onclick="createSetAtt()">CreateSetAttribute</button>
+    <button onclick="createGetAtt()">CreateGetAttribute</button>
+    <button onclick="ChangerColor()">ChangerColor</button>
     <script>
         function createText() {
          // alert('hello');
@@ -18,6 +27,41 @@
          let createText = document.createTextNode('Create Text Node');
          createTextNodeId.appendChild(createText);   
         }
+
+
+        function createElementLesson() {
+            // alert("Ok");
+            let h3 = document.createElement('h3');
+            // console.log(h3);
+            h3.innerText = "This is Create Element";
+            // console.log(h3);
+            document.body.appendChild(h3);
+        }
+         
+        function createSetAtt() {
+            let setAttElement = document.getElementById ('setAtt');
+            setAttElement.setAttribute('style', 'color: red;')
+        }
+
+        function createGetAtt() {
+            let getAttElement = document.getElementById('getAtt');
+            console.log(getAttElement.getAttribute('style'));
+        }
+
+            function ChangerColor() {
+                let removeTag = document.getElementById('removeAtt');
+                let colorName = removeTag.getAttribute('style');
+                console.log(colorName);
+            }
+
+            if (colorName == 'color: red;'){
+                removeTag.removeAttribute('style');
+                removeTag.setAttribute('style','color: green;')
+            }else{
+                removeTag.removeAttribute('style');
+                removeTag.setAttribute('style','color: red;')
+            }
+
     </script>
 </body>
 </html>
