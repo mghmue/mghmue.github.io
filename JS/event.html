@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event</h1>
+    <img src="computer.jpg" alt="" id="myImage" width="300" height="300" onmouseenter="big()" onmouseleave="normal()" onclick="soBig()">
+
+    <input type="text"id="myInput" onchange="showData()">
+    <p id="result"></p>
+    <script>
+           //nmouseenter
+           //nmouseleave
+
+           //nmouseout   
+           //npagereveal
+
+           //onclick
+
+           //onkeyup
+           //onchange
+           //onkeydown 
+        function big(){
+            document.getElementById('myImage').style.width = '500px';
+            document.getElementById('myImage').style.height = '500px';
+        }
+        function normal(){
+            document.getElementById('myImage').style.width = '300px';
+            document.getElementById('myImage').style.height = '300px';
+        }
+        function soBig(){
+            document.getElementById('myImage').style.width = '800px';
+            document.getElementById('myImage').style.height = '800px';
+        }
+
+        function showData(){
+            let myInput = document.getElementById('myInput').value;
+            document.getElementById('result').innerHTML = myInput;
+        }
+
+    </script>
+</body>
+</html>
