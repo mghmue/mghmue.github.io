@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<body style="color: blue;" >
+    <div style="text-align: center;">
+      <h1 >Digital Clock</h1>
+           <p id="day" style="font-size: 2em;"></p>
+           <p id="time" style="font-size: 2em;"></p>
+      <p id="Digital" style="font-size: 3em;"></p>
+    </div>
+    <script>
+         setInterval(dayInterval );
+        function dayInterval(){
+            let day = document.getElementById("day");
+            let date = new Date();
+            let days = date.getDay();
+            let dayList = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            day.innerHTML = dayList[days];
+        }
+        setInterval(timeInterval);
+        function timeInterval(){
+            let d = document.getElementById("time");
+            let date = new Date();
+            let dates = date.getDate();
+            let months = date.getMonth() +1;
+            let years = date.getFullYear();
+            time.innerHTML = dates + "/" + months + "/" + years;
+        }
+        setInterval(digitalInterval, 1000);
+
+       function digitalInterval (){
+       let Digital = document.getElementById("Digital");
+       let date = new Date();
+         let hours = date.getHours();
+         let minutes = date.getMinutes();
+         let seconds = date.getSeconds();
+         let AmPm=hours >= 12 ? 'PM' : 'AM';
+        
+        Digital.innerHTML = hours + ":" + minutes + ":" + seconds + " " + AmPm;
+         }
+    </script>
+</body>
+</html>
