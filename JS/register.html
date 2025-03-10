@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Register Form</h1>
+    <form action="" name="myform">
+
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="age">Age</label><br>
+        <input type="age"id="agel" name="age"><br><br>
+
+        <label for="Address">Address</label><br>
+        <textarea name="Address" id="Address" ></textarea><br><br>
+
+        <button type="button" onclick="showData()">Register</button>
+
+    </form>
+
+    <h1> Student Lists</h1>
+    <table border="1" cellspacing="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+           </tr>
+        </thead>
+
+
+        <tbody id="myBody">
+
+        </tbody>
+    </table>
+</body>
+<script>
+    var studentList = [];
+    function showData() {
+        // alert("Hello");
+
+        //  value ကို ရယူမယ်
+        let name = document.myform.name.value;
+        let age = document.myform.age.value;
+        let address = document.myform.Address.value;
+        // console.log(name, age, address);
+
+        //  Object တစ်ခုဖန်တီးမယ်
+        let Student = {
+            student_name: name,
+            student_age: age,
+            student_address: address
+        }
+
+        //  Object ကို Array ထဲမှာ ထည့်မယ်
+        studentList.push(Student);
+        // console.log(studentList);
+
+        // Data ပြမယ်
+        var html = '';
+        for (let i = 0; i < studentList.length; i++) {
+        //  console.log(studentList[i]);
+         html += ` 
+            <tr>
+                <td>${i + 1}</td>
+                <td>${studentList[i].student_name}</td>
+                <td>${studentList[i].student_age}</td>
+                <td>${studentList[i].student_address}</td>
+            </tr>
+        `;
+         }
+
+         document.getElementById("myBody").innerHTML = html;
+    }
+            
+
+
+
+
+
+</script>
+</html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock</title>
 </head>
-<body style="color: blue;" >
+<body style="color: blue;" style="font-weight: bold;" >
     <div style="text-align: center;">
       <h1 >Digital Clock</h1>
            <p id="day" style="font-size: 2em;"></p>
@@ -38,10 +38,10 @@
          let hours = date.getHours();
          let minutes = date.getMinutes();
          let seconds = date.getSeconds();
-         let AmPm=hours >= 12 ? 'PM' : 'AM';
+         let AmPm=
         
         Digital.innerHTML = hours + ":" + minutes + ":" + seconds + " " + AmPm;
-         }
+      }
     </script>
 </body>
 </html>
