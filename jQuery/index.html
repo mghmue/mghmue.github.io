@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hello jQuaery</h1>
+    <button id="click">Click</button>
+    <!-- CDN: Content Delivery Network -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+
+    <!-- Local Installation -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $("#click").click(function(){
+            alert("Hello");
+        });
+
+
+        $(document).ready(function(){
+            $("#click").click(function(){
+                $("h1").hide(function(){
+                    alert("Hided H1");
+                })
+              
+            })
+        })    
+    </script>
+
+</body>
+</html>
