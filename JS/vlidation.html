@@ -1,106 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validation</title>
+    <title>Register lesson</title>
 </head>
 <body>
-    <h1>Form Validation</h1>
-    <form action="register.php" onsubmit="return checkValue()">
+    <h1>Form Vlidation</h1>
+
+    <form action="register.php" onsubmit="return checkvalue()">
+
         <label for="name">Name</label><br>
-        <input type="text" id="name"><br><br>
+        <input type="text" id="name"> 
         <p id="nameErrorMessage"></p>
 
         <label for="email">Email</label><br>
-        <input type="email" id="email"><br><br>
+        <input type="email" id="email">
         <p id="emailErrorMessage"></p>
 
         <label for="password">Password</label><br>
-        <input type="password" id="password"><br><br>
+        <input type="password" id="password"> 
         <p id="passwordErrorMessage"></p>
 
-        <label for="confirm_password">Confirm Password</label><br>
-        <input type="password" id="confirm_password"><br><br>
-        <p id="confrim_passwordErrorMessage"></p>
+        <label for="confirm_password">Confirm_password</label><br>
+        <input type="password" id="confirm_password">
+        <p id="confirm_passwordErrorMessage"></p>
 
         <input type="submit" value="Register">
-   </form>
 
-   <script>
-      function checkValue(){
-           // alert("Hello");
+    </form>
 
-             let name = document.getElementById('name').value;
-             let email = document.getElementById('email').value;
-             let password = document.getElementById('password').value;
-             let confirm_password = document.getElementById('confirm_password').value;
-    
-            if (name != "" && email != "" && password != "" && confirm_password != "") { 
+    <script>
+        function checkvalue(){
+            // alert('ok');
+
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let confirm_password = document.getElementById('confirm_password').value;
+
+            if(name !=  "" && email != "" && password != "" && confirm_password != "" && password == confirm_password) {
             return true;
-            }else{
-               if (name == "") {
-                 var nameError = document.getElementById('name');
-                 var nameErrorMessage = document.getElementById('nameErrorMessage');
-                 nameError.style.border = "1px solid red";
-                 nameErrorMessage.innerText = "Name is required";
-                 nameErrorMessage.style.color = "red";
-                }
-                
-               if (name != "") {
-                 nameError.style.border = "1px solid red";
-                 nameErrorMessage.innerText = "";
+            }else {
+                var nameError = document.getElementById('name');
+                var namrErrorMessage = document.getElementById('nameErrorMessage');
+               
+                if (name == ""){
+                    nameError.style.border = "1px solid red";
+                    namrErrorMessage.innerText = "Name is Required";
+                    namrErrorMessage.style.color = "red";
                 }
 
-               if (email == "") {
-                 var emailError=document.getElementById('email');
-                 var emailErrorMessage = document.getElementById('emailErrorMessage');
-                 emailError.style.border = "1px solid red"
-                 emailErrorMessage.innerText = "Email is required";
-                 emailErrorMessage.style.color = 'red';
-               }
-               
-               if (email != "") {
+                if (name != ""){
+                    nameError.style.border = "1px solid black";
+                    namrErrorMessage.innerText = "";
+
+                }
+                var emailError = document.getElementById('email');
+                var emailErrorMessage = document.getElementById('emailErrorMessage');
+
+                if (email == ""){
+
+                    emailError.style.border = "1px solid red";
+                    emailErrorMessage.innerText = "Email is Required";
+                    emailErrorMessage.style.color = "red";
+                }
+
+                if (email != ""){
                     emailError.style.border = "1px solid black";
                     emailErrorMessage.innerText = "";
-                }
 
-                if (password == "") {
-                  var passwordError = document.getElementById('password');
-                  var passwordErrorMessage = document.getElementById('passwordErrorMessage');
-                  passwordError.style.border = "1px solid red";
-                  passwordErrorMessage.innerText = "Password is required";
-                  passwordErrorMessage.style.color = "red";
                 }
+                 var passwordError = document.getElementById('password');
+                 var passwordErrorMessage = document.getElementById('passwordErrorMessage');
+                 
+                 if (password == ""){
+                    passwordError.style.border = "1px solid red";
+                    passwordErrorMessage.innerText = "Password is Required";
+                    passwordErrorMessage.style.color = "red";
+                 }
 
-                if (password != "") {
+                 if (password != ""){
                     passwordError.style.border = "1px solid black";
                     passwordErrorMessage.innerText = "";
                 }
 
-                if (confirm_password == "") {
-                  var confirm_passwordError = document.getElementById('confirm_password');
-                  var confirm_passwordErrorMessage = document.getElementById('con_passwordErrorMessage');
-                  confirm_passwordError.style.border = "1px solid red";
-                  confirm_passwordErrorMessage.innerText = "Confirm Password is required";
-                  confirm_passwordErrorMessage.style.color = "red";
-                }
-                
-                if (confirm_password != "") {
+                var confirm_passwordError = document.getElementById('confirm_password');
+                var confirm_passwordErrorMessage = document.getElementById('confirm_passwordErrorMessage');
+                 
+                 if (confirm_password == ""){
+                    confirm_passwordError.style.border = "1px solid red";
+                    confirm_passwordErrorMessage.innerText = "Confirm Password is Required";
+                    confirm_passwordErrorMessage.style.color = "red";
+                 }
+
+                 if (confirm_password != ""){
                     confirm_passwordError.style.border = "1px solid black";
                     confirm_passwordErrorMessage.innerText = "";
                 }
-
-                if (confirm_password != password) {
+                
+                if (confirm_password != password){
                     confirm_passwordError.style.border = "1px solid red";
-                    confirm_passwordErrorMessage.innerText = "Password don't match!";
+                    confirm_passwordErrorMessage.innerText = "Password don't match!!";
                     confirm_passwordErrorMessage.style.color = "red";
                 }
                 return false;
-              }
             }
-        
+
+
+        }
+    </script>
     
-</script>
 </body>
 </html>
