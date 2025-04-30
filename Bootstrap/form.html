@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="text-center text-danger my-5">Student Register</h1>
+       <div class="container my-5">
+         <div class="row">
+                <div class="col-12 offset-md-3 col-md-6">
+                    <form action="" method="post">
+
+                        <div class="mb-3">
+                            <label for="Photo" class="from-label">Photo</label>
+                            <input type="file" id="Photo" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="from-label">Name</label>
+                            <input type="text" placeholder="Paing Hmue" id="Name" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Email" class="from-label">Email</label>
+                            <input type="email" placeholder="example@gmail.com" id="Email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="DOB" class="from-label">DOB</label>
+                            <input type="date" id="dob" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Phone" class="from-label">Phone</label>
+                            <input type="number" placeholder="09*******" id="dob" class="form-control">
+                        </div>
+
+                        <label for="" class="d-block mt-2">Gender</label>
+                        <div class="form-check-inline">
+                            <input type="radio" name="gender" id="male" class="form-check-input">
+                            <label for="male" class="form-check-lable">Male</label>
+                        </div>
+
+                        <div class="form-check-inline">
+                            <input type="radio" name="gender" id="female" class="form-check-input">
+                            <label for="female" class="form-check-lable">Female</label>
+                        </div>
+
+                        <label for="Edu" class="d-block mt-3 from-label">Education</label>
+                        <select name="" id="" class="form-select formt-select">
+                            <option value="1">First Year</option>
+                            <option value="2">Second Year</option>
+                            <option value="3">Third Year</option>
+                            <option value="4">Final Year</option>
+                        </select>
+
+                        <label for=""class="mt-3 form-lable">Hobbies</label>
+                        <div class="form-check">
+                            <input type="checkbox" id="reading">
+                            <label for="reading" class="form-check-lable">Reading</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="Singing">
+                            <label for="Singing">Singing</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="Travlling">
+                            <label for="Travlling" class="form-check-lable">Travlling</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="Swining">
+                            <label for="Swining" class="form-check-lable">Swining</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="Gamming">
+                            <label for="Gamming" class="form-check-lable">Gamming</label>
+                        </div>
+
+                        <div class="my-3">
+                            <label for="address" class="form-check-lable">Address</label>
+                            <textarea name="" id="" class="form-control"></textarea>
+                        </div>
+
+
+                        <button class="btn btn-success float-end">Register</button>
+                    </form>
+                </div>
+         </div>
+       </div>
+
+
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
