@@ -31,7 +31,7 @@
      -->
             <!-- navbar အသေးအတွက် -->
    <div class="text-white">
-        <div class="container py-2 ">
+        <div class="container py-3 ">
             <div class="row">
                 <div class="col-6 col-md-9">
                     <small >
@@ -48,12 +48,15 @@
     </div>
 
     <!-- navbar အကြီးအတွက် -->
-       <div class="container py-1">
+       <div class="container py-1  ">
             <div class="d-flex justify-content-between align-items-center">
 
                 <!-- Start: Search Icon -->
                 <div class="start" >
-                    <i class="bi bi-search fs-4 nav_hover"></i>
+                    <i class="bi bi-search fs-4 nav_hover d-none d-lg-block "></i>
+                    <button class="navbar-toggler" data-bs-target="#navBar" data-bs-toggle="collapse">
+                        <span class="navbar-toggler-icon d-lg-none nav_hover"><i class="fa-solid fa-bars"></i></span>
+                    </button>
                 </div>
           
                 <!-- Center: Logo -->
@@ -62,7 +65,8 @@
                 </div>
           
                 <!-- End: User and Cart Icons -->
-                <div class="end d-flex gap-4">
+                <div class="end d-flex gap-4 ">
+                    <i class="bi bi-search fs-4 nav_hover d-lg-none "></i>
                     <i class="bi bi-person fs-4 nav_hover d-none d-lg-block"></i>
                     <i class="bi bi-cart fs-4 nav_hover"></i>
                     <span class="cart_noti">5</span>
@@ -70,48 +74,59 @@
             </div>    
         </div>
 
-
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container py-1">
-                <button class="navbar-toggler " data-bs-target="#navBar" data-bs-toggle="collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <!-- navbar အကြီးအတွက် -->
+        <nav class="navbar navbar-expand-lg  ">
+            <div class="container py-1 ms-2 ">
+               
                 <div id="navBar" class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto text-center">
                         <li class="nav-item dropdown ms-3">
-                            <a class="nav-link dropdown-toggle nav_hover" href="#" data-bs-toggle="dropdown">WEDDING RETURN GIFTS</a>
+                            <a class="nav-link dropdown-toggle nav_hover fw-bold" href="#" data-bs-toggle="dropdown">WEDDING RETURN GIFTS</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item nav_hover" href="#">TREES</a></li>
-                                <li><a class="dropdown-item nav_hover" href="#">CANDALS</a></li>
+                                <li><a class="dropdown-item nav_hover" href="#">PLANTS</a></li>
+                                <li><a class="dropdown-item nav_hover" href="#">CANDLES</a></li>
                                 <li><a class="dropdown-item nav_hover" href="#">HANDMADES</a></li>
                             </ul>
                         </li>
-                        <!-- Category မြှားလေးနဲ့ dropdown လေးကိုလုပ်တာ -->
                         <li class="nav-item dropdown ms-3">
-                            <a class="nav-link dropdown-toggle nav_hover" href="#" data-bs-toggle="dropdown">BIRTHDAY GIFTS</a>
+                            <a class="nav-link dropdown-toggle nav_hover fw-bold" href="#" data-bs-toggle="dropdown">BIRTHDAY GIFTS</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item nav_hover" href="#">FOR HIM</a></li>
-                                <li><a class="dropdown-item nav_hover" href="#">FOR HER</a></li>
+                                <li><a class="dropdown-item nav_hover " href="#">For Him</a></li>
+                                <li><a class="dropdown-item nav_hover " href="#">For Her</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown ms-3">
-                            <a class="nav-link dropdown-toggle nav_hover" href="#" data-bs-toggle="dropdown">ANNIVERSARY GIFTS</a>
+                            <a class="nav-link dropdown-toggle nav_hover fw-bold" href="#" data-bs-toggle="dropdown">ANNIVERSARY GIFTS</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item nav_hover" href="#">FOR HIM</a></li>
-                                <li><a class="dropdown-item nav_hover" href="#">FOR HER</a></li>
+                                <li><a class="dropdown-item nav_hover" href="#">For Him</a></li>
+                                <li><a class="dropdown-item nav_hover" href="#">For Her</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a href="" class="nav-link fw-medium ms-3 nav_hover">WEDDING GIFTS</a></li>
-                       
-                        <li class="nav-item"><a href="" class="nav-link fw-medium ms-3 nav_hover">About</a></li>
-                        <li class="nav-item"><a href="" class="nav-link fw-medium ms-3 nav_hover">Contact</a></li>
-                        
-                            <i class="bi bi-person fs-4 nav_hover d-lg-none"></i>
-                        
+                            <li class="nav-item"><a href="" class="nav-link fw-medium ms-3 nav_hover fw-bold">WEDDING GIFTS</a></li>
+                            <li class="nav-item"><a href="" class="nav-link fw-medium ms-3 nav_hover fw-bold">ABOUT</a></li>
+                            <li class="nav-item"><a href="" class="nav-link fw-medium ms-3 nav_hover fw-bold">CONTACT</a></li>
+                             <i class="bi bi-person fs-4 nav_hover d-lg-none"></i>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <!-- Items -->
+        <div class="container py-5">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <img src="image/t1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-start">Product 1</h5>                    
+                         </div>
+                    </div> 
+                </div>   
+            </div>     
+        </div>
+
+
+
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
