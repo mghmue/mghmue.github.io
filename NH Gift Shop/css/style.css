@@ -1,6 +1,4 @@
-.text-white{
-    background-color:#9A0012;
-}
+
 .nav_hover:hover {
     color: #9A0012;
    
@@ -27,3 +25,10 @@
   .nav_hover{
     font-size: bold;
   }
+
+  .divided{
+    width: 90px;
+    border: 2px solid #9A0012;
+  }
+  
+  
