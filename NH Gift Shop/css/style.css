@@ -4,6 +4,11 @@
    
 }
 
+  .nav_hover{
+    font-size: bold;
+  }
+
+
 .cart_noti{
     position: relative;
     top: -12px;
@@ -22,9 +27,6 @@
     font-style: normal;
   }
 
-  .nav_hover{
-    font-size: bold;
-  }
 
   .divided{
     width: 90px;
