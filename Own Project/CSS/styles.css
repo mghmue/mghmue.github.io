@@ -226,6 +226,10 @@ h3 {
     padding-left: 200px;
    
  }
+ .service-img-m {
+    width: 50%;
+    padding-right: 100px;
+ }
 
  .service-title {
     font-size: 2.5em;

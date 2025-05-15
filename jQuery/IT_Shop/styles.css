@@ -26,22 +26,18 @@ h2 {
     margin-top: 10px;
 }
 
-/* .nav-text ul li i{
-    background-color: blue;
-    padding: 5px;
-    border-radius: 5px;
-} */
 
 .nav-text {
-   position: relative;
+   position:relative;
     display: flex;
     grid-template-columns: 1fr 1fr;
+   
 }
 
 .icon {
     font-size: 15px;
     background-color: #002fff;
-    padding:7px;
+    padding: 10px;
     border-radius: 5px;
     color: white;
     margin-left: 5px;
@@ -118,3 +114,6 @@ h2 {
      font-weight: bold;
  }
  
+ tr th, tr td {
+    padding: 25px;
+ }
