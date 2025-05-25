@@ -9,11 +9,11 @@
   }
 
 
-.cart_noti{
-    position: relative;
+#item-count{
+    /* position: relative; */
     top: -12px;
     right: 27px;
-    background-color:red;
+    background-color:#9A0012;
     color: white;
     padding: 1px 5px;
     border-radius: 50%;

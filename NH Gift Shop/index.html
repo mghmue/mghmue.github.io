@@ -60,18 +60,20 @@
                 <!--  User and Cart Icons -->
                                 <!-- User and Cart Icons -->
                 <div class="d-flex align-items-center">
-                <!-- Search Icon-->
-                <i class="bi bi-search fs-4 nav_hover d-lg-none me-4"></i>
+                    <!-- Search Icon-->
+                    <i class="bi bi-search fs-4 nav_hover d-lg-none me-4"></i>
 
-                <!-- Person Icon -->
-                <a href="../NH Gift Shop/page/login and reg.html" class="text-decoration-none me-4 d-none d-lg-block pt-2 text-black">
-                    <i class="fa-regular fa-user fs-4 nav_hover "></i>
-                </a>
+                    <!-- Person Icon -->
+                    <a href="../NH Gift Shop/page/login and reg.html" class="text-decoration-none me-4 d-none d-lg-block pt-2 text-black">
+                        <i class="fa-regular fa-user fs-4 nav_hover "></i>
+                    </a>
 
-                <!-- Cart Icon -->
-                <i class="bi bi-cart fs-4 nav_hover"></i>
+                    <!-- Cart Icon -->
+                    <i class="bi bi-cart fs-4 nav_hover"></i>
+                
+                    <span id="item-count" class="mb-4 pb-2">0</span>
                 </div>
-
+             </div>
         </div>
         <hr class="my-0 d-lg-none " style="color: #9A0012;">
         <!-- navbar အကြီးအတွက် -->
@@ -106,7 +108,8 @@
                             <h6 class="mt-3">Enchanting potted plants for wedding return gifts</h6>
                             <span class="text-danger fs-6 fw-bold">Price:1500MMK</span>
                             <div class="view_readmore pt-2">
-                                <a href="" class="btn btn-danger btn-sm">Read more</a>
+                                <a  class="btn btn-danger btn-sm "data-bs-target="#myModal"
+                         data-bs-toggle="modal" >Read more</a>
                             </div>
                         </div>
                     </div>
@@ -118,7 +121,8 @@
                             <h6 class="mt-3">Specialized paper-wrapped bubble candles for ret...</h6>
                             <span class="text-danger fs-6 fw-bold">Price:1300MMK</span>
                             <div class="view_readmore pt-2">
-                                <a href="" class="btn btn-danger btn-sm">Read more</a>
+                                <a  class="btn btn-danger btn-sm "data-bs-target="#Modal_1"
+                         data-bs-toggle="modal" >Read more</a>
                             </div>
                         </div>
                     </div>
@@ -130,7 +134,8 @@
                             <h6 class="mt-3">Keychains with message cards... </h6>
                             <span class="text-danger fs-6 fw-bold">Price:1000MMK</span>
                             <div class="view_readmore pt-2">
-                                <a href="" class="btn btn-danger btn-sm">Read more</a>
+                                <a  class="btn btn-danger btn-sm "data-bs-target="#Modal_1"
+                         data-bs-toggle="modal" >Read more</a>
                             </div>
                         </div>
                     </div>
@@ -142,7 +147,8 @@
                             <h6 class="mt-3">Mesmerizing succulent plant return gift ...</h6>
                             <span class="text-danger fs-6 fw-bold">Price:1300MMK</span>
                             <div class="view_readmore pt-2">
-                                <a href="" class="btn btn-danger btn-sm">Read more</a>
+                               <a  class="btn btn-danger btn-sm "data-bs-target="#Modal_1"
+                         data-bs-toggle="modal" >Read more</a>
                             </div>
                         </div>
                     </div>
@@ -522,8 +528,10 @@
 
 
       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<!-- jquery/stick -->
+      <!-- jquery/stick -->
+   
     <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
     <script src="js/stick.js"></script>
 
     <!-- bootstrap -->
@@ -533,3 +541,102 @@
      <script src="fontawesome/js/all.min.js"></script>
 </body>
 </html>
+
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-lg">
+     <div class="modal-content">
+            <div class="modal-header ">
+                    <h5 class="modal-title">WEDDING RETURN GIFT</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+           <div class="modal-body">
+                <div class="container">
+                  <div class="row align-items-center">
+                        <!-- Image -->
+                        <div class="col-md-6 text-center mb-3 mb-md-0">
+                        <img src="Image/t1.jpg" alt="" class="img-fluid rounded">
+                        </div>
+
+                        <!-- Info + Quantity -->
+                        <div class="col-md-6">
+                        <h4>Enchanting Potted Plants</h4>
+                        <h6 class="text-muted" >Price: <strong style="color: #9A0012;">1500 MMK</strong></h6>
+                        <p class="small">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit aliquid ipsum consequatur culpa quae incidunt ea commodi cupiditate, quisquam?
+                        </p>
+
+                        <!-- Quantity Selector -->
+                        <div class="d-flex align-items-center gap-2 mt-3">
+                            <span>Qty:</span>
+                            <button class="btn btn-outline-secondary btn-sm" onclick="decrease()">-</button>
+                            <span id="quantity" class="px-3">1</span>
+                            <button class="btn btn-outline-secondary btn-sm" onclick="increase()">+</button>
+                        </div>
+
+                        <!-- Add to Cart Button -->
+                        <button class="btn btn-danger mt-4 addToCart" data-id="1" data-name="Enchanting potted plants for wedding return gifts" data-price="1500MMK">Add To Cart</button>
+                   </div>
+                </div>
+            </div>
+      </div>
+</div>    
+
+
+<div class="modal fade" id="Modal_1">
+  <div class="modal-dialog modal-lg">
+     <div class="modal-content">
+            <div class="modal-header ">
+                    <h5 class="modal-title">WEDDING RETURN GIFT</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+           <div class="modal-body">
+                <div class="container">
+                  <div class="row align-items-center">
+                        <!-- Image -->
+                        <div class="col-md-6 text-center mb-3 mb-md-0">
+                        <img src="Image/t2.jpg" alt="" class="img-fluid rounded">
+                        </div>
+
+                        <!-- Info + Quantity -->
+                        <div class="col-md-6">
+                        <h4>Enchanting Potted Plants</h4>
+                        <h6 class="text-muted" >Price: <strong style="color: #9A0012;">1300 MMK</strong></h6>
+                        <p class="small">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit aliquid ipsum consequatur culpa quae incidunt ea commodi cupiditate, quisquam?
+                        </p>
+
+                        <!-- Quantity Selector -->
+                        <div class="d-flex align-items-center gap-2 mt-3">
+                            <span>Qty:</span>
+                            <button class="btn btn-outline-secondary btn-sm" onclick="decrease()">-</button>
+                            <span id="quantity" class="px-3">1</span>
+                            <button class="btn btn-outline-secondary btn-sm" onclick="increase()">+</button>
+                        </div>
+
+                        <!-- Add to Cart Button -->
+                        <button class="btn btn-danger mt-4 addToCart" data-id="2" data-name="Specialized paper-wrapped bubble candles for ret..." data-price="1300MMK">Add To Cart</button>
+                   </div>
+                </div>
+            </div>
+      </div>
+</div> 
+
+<script>
+    let quantity = 1;
+    const quantityElement = document.getElementById("quantity");
+
+    function increase() {
+    quantity++;
+    quantityElement.textContent = quantity;
+    }
+
+    function decrease() {
+    if (quantity > 1) {
+        quantity--;
+        quantityElement.textContent = quantity;
+        }
+    }
+</script>
